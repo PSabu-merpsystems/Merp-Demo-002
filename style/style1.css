@@ -1,0 +1,67 @@
+/* Styles specific to Campaign Generator Page */
+main {
+    padding: 20px;
+}
+
+.step-by-step-guide, .data-input-section, .ai-suggestions-panel, .preview-edit-area, .export-options {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.step-by-step-guide h2, .data-input-section h2, .ai-suggestions-panel h2, .preview-edit-area h2, .export-options h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.data-input-section form {
+    margin-bottom: 20px;
+}
+
+.data-input-section label, .ai-suggestions-panel label {
+    font-weight: bold;
+}
+
+.data-input-section textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.ai-suggestions-panel .suggestions {
+    margin-top: 10px;
+}
+
+.ai-suggestions-panel h3 {
+    margin-top: 10px;
+}
+
+.preview-edit-area .preview, .preview-edit-area .edit {
+    margin-top: 10px;
+}
+
+.preview-edit-area form {
+    margin-bottom: 20px;
+}
+
+.export-options button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.export-options button:hover {
+    background-color: #45a049;
+}
+
+
+

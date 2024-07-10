@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campaign History Page</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation-bar">
+        <ul>
+          <li>
+            <img src="assets/logo-omantel.png" alt="" class="logo-oman" />
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Repository .html">Repository</a></li>
+          <li><a href="Campsign-gene.html">Campaign Generator</a></li>
+          <li>
+            <a href="Cam-history.html"><b>Campaign History</b></a>
+          </li>
+          <li><a href="Settings.html">Settings</a></li>
+          <li><a href="help.html">Help</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="campaign-list">
+        <h2>Campaign List</h2>
+        <!-- Displays a list of all previous campaigns with thumbnails and brief summaries -->
+        <ul>
+          <li>
+            <div class="campaign-thumbnail">
+              <img src="assets/Campaign-1.jpg" alt="Campaign 1 Thumbnail" />
+            </div>
+            <div class="campaign-summary">
+              <h3>New Mobile launch</h3>
+              <p>
+                Welcome to the launch of the most anticipated mobile device of
+                the year. Our campaign, "Unleash the Future," is designed to
+                captivate, engage, and inspire our target audience by showcasing
+                the groundbreaking features and innovations of our new mobile
+                phone. This campaign will highlight the cutting-edge technology,
+                sleek design, and unmatched performance that set our device
+                apart from the competition.
+              </p>
+              <a href="#" onclick="popUpShow()">View Campaign</a>
+              <button>Republish</button>
+            </div>
+          </li>
+          <li>
+            <div class="campaign-thumbnail">
+              <img src="assets/Campaign-2.jpg" alt="Campaign 2 Thumbnail" />
+            </div>
+            <div class="campaign-summary">
+              <h3>New Arrival of Laptop</h3>
+              <p>
+                "Empower Your Potential" is a marketing campaign designed to
+                generate excitement and showcase the innovative features and
+                superior performance of our new laptop. The campaign targets
+                tech enthusiasts, professionals, and students, emphasizing the
+                device's cutting-edge technology, sleek design, and versatility.
+              </p>
+              <a href="#" onclick="popUpShow()">View Campaign</a>
+              <button>Republish</button>
+            </div>
+          </li>
+          <!-- Additional campaign items -->
+        </ul>
+      </section>
+      <section class="performance-metrics">
+        <h2>Performance Metrics</h2>
+        <!-- Visual metrics on campaign reach, engagement, and effectiveness -->
+        <div class="metrics">
+          <p>Campaign Reach: 100,000</p>
+          <p>Engagement Rate: 78%</p>
+          <p>Effectiveness: High</p>
+        </div>
+      </section>
+
+      <!-- Popup -->
+      <div class="popUp" id="myPopUp">
+        <h1>Select Information Source</h1>
+        <form id="infoSourceForm">
+          <label for="infoSource">Where did you get this information?</label
+          ><br />
+          <br />
+          <br />
+
+          <input
+            type="radio"
+            id="facebook"
+            name="infoSource"
+            value="Facebook"
+          />
+          <label for="facebook">From Facebook</label><br />
+
+          <input
+            type="radio"
+            id="whatsapp"
+            name="infoSource"
+            value="WhatsApp"
+          />
+          <label for="whatsapp">From WhatsApp</label><br />
+
+          <input
+            type="radio"
+            id="billboard"
+            name="infoSource"
+            value="Billboard"
+          />
+          <label for="billboard">I have seen it in a Billboard</label><br />
+
+          <input
+            type="radio"
+            id="newspaper"
+            name="infoSource"
+            value="Newspaper"
+          />
+          <label for="newspaper">From a Newspaper</label><br />
+
+          <input type="radio" id="tv" name="infoSource" value="TV" />
+          <label for="tv">From TV</label><br />
+
+          <input type="radio" id="friend" name="infoSource" value="Friend" />
+          <label for="friend">From a Friend</label><br />
+
+          <input type="radio" id="other" name="infoSource" value="Other" />
+          <label for="other">Other</label><br />
+
+          <button onclick="popupSubmit()" type="submit" class="popUpButton">
+            Submit
+          </button>
+          <button onclick="popupSubmit()" type="submit" class="popUpCancel">Cancel</button>
+        </form>
+      </div>
+    </main>
+    <script src="script/script.js"></script>
+  </body>
+</html>

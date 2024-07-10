@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campaign Generator Page</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation-bar">
+            <ul>
+                <li><img src="assets/logo-omantel.png" alt="" class="logo-oman"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Repository .html">Repository</a></li>
+                <li><a href="Campsign-gene.html"><b>Campaign Generator</b></a></li>
+                <li><a href="Cam-history.html">Campaign History</a></li>
+                <li><a href="Settings.html">Settings</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="step-by-step-guide">
+            <h2>Step-by-Step Guide</h2>
+            <p>Instructions on creating a campaign using past data...</p>
+        </section>
+        <section class="data-input-section">
+            <h2>Data Input Section</h2>
+            <!-- Fields to input or select content types, campaign goals -->
+            <form>
+                <label for="content-type">Content Type:</label>
+                <select id="content-type">
+                    <option>Text</option>
+                    <option>Images</option>
+                    <option>Videos</option>
+                </select><br><br>
+                <label for="campaign-goals">Campaign Goals:</label><br>
+
+                <input type="text" id="campaign-goals" rows="4" cols="50" class="campaignInput">
+                <button type="button" class="ai-gen-button" onclick="showValue()">AI Generate</button>
+                <!-- <textarea id="campaign-goals" rows="4" cols="50" > -->
+                </textarea><br><br>
+            </form>
+        </section>
+        <section class="ai-suggestions-panel">
+            <h2>AI Suggestions Panel</h2>
+            <!-- Displays AI-generated content suggestions like headlines, text, images -->
+            <div class="suggestions">
+                <h3>Headline:</h3>
+                <p id="ai-headline" >Unlock the Power of 5G with Omantel</p>
+                <h3>Text:</h3>
+                <p id="aiText" >Omantel is proud to introduce the next generation of mobile connectivity with our cutting-edge 5G network.
+                    This revolutionary technology promises to deliver unparalleled internet speeds, ultra - low latency, and a seamless user experience.Whether you're streaming your favorite shows, playing online games, or conducting business on the go, Omantel's 5G network will transform the way you connect.
+                    Our 5G network is designed to meet the unique needs of Oman, ensuring that every corner of our beautiful country benefits from enhanced connectivity.With Omantel's 5G, you'll enjoy:
+                Lightning - Fast Speeds: Download and upload at unprecedented speeds, making buffering and lag a thing of the past.
+        Improved Connectivity: Stay connected with greater reliability and coverage, even in densely populated areas.
+        Enhanced User Experience: Experience smoother streaming, faster browsing, and more responsive gaming.
+        Innovation and Leadership: Omantel is committed to leading the technological revolution in Oman, bringing the latest advancements to our customers.
+        Join us in embracing the future.Upgrade to Omantel's 5G network today and unlock a world of possibilities!</p>
+                <h3>Images:</h3>
+                <img  src="assets/5G.jpg" id="aiImage" class="placeImage" alt="Placeholder Image">
+            </div>
+        </section>
+        <section class="preview-edit-area">
+            <h2>Preview & Edit Area</h2>
+            <!-- Where generated content can be previewed and edited (change size, color) -->
+            <div class="preview">
+                <h3>Preview:</h3>
+                <div class="preview-content">
+                    <h4>Generated Content Preview</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="edit">
+                <h3>Edit:</h3>
+                <form>
+                    <label for="text-color">Text Color:</label>
+                    <input type="color" id="text-color" name="text-color"><br><br>
+                    <label for="text-size">Text Size:</label>
+                    <input type="range" id="text-size" name="text-size" min="12" max="24"><br><br>
+                </form>
+            </div>
+        </section>
+        <section class="export-options">
+            <h2>Export Options</h2>
+            <!-- Buttons to export or share the campaign with PR firms and other platforms -->
+            <button>Export Campaign</button>
+            <button>Share Campaign</button>
+        </section>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
